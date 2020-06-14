@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Welcome Guest</title>
+	</head>
+
+	<body>
+
+		<div id="progressbar"></div>
+		<div id="scrollpath"></div>
+		<div id="percent"></div>
+		<section>
+			<h2>Welcome dear Guest</h2>
+			<br>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Nam veniam aspernatur ut eveniet, ipsam nostrum tempore vitae,
+				suscipit aut id iure quaerat maxime, facere illum totam?
+				Unde dicta repellendus nesciunt.
+				Quibusdam expedita sapiente quis ratione,
+				magnam deleniti eius tempore voluptas! Cumque labore,
+				aut quo, expedita commodi ducimus cupiditate asperiores dicta dolor debitis nulla in,
+				tempora similique eos autem dolore ipsam.</p>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Nam veniam aspernatur ut eveniet, ipsam nostrum tempore vitae,
+				suscipit aut id iure quaerat maxime, facere illum totam?
+				Unde dicta repellendus nesciunt.
+				Quibusdam expedita sapiente quis ratione,
+				magnam deleniti eius tempore voluptas! Cumque labore,
+				aut quo, expedita commodi ducimus cupiditate asperiores dicta dolor debitis nulla in,
+				tempora similique eos autem dolore ipsam.</p>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				Nam veniam aspernatur ut eveniet, ipsam nostrum tempore vitae,
+				suscipit aut id iure quaerat maxime, facere illum totam?
+				Unde dicta repellendus nesciunt.
+				Quibusdam expedita sapiente quis ratione,
+				magnam deleniti eius tempore voluptas! Cumque labore,
+				aut quo, expedita commodi ducimus cupiditate asperiores dicta dolor debitis nulla in,
+				tempora similique eos autem dolore ipsam.</p>
+		</section>
+		<br>
+
+		<div class="signature">
+			<p>Donos <span>Cristian</span></p>
+		</div>
+		<script type="text/javascript">
+			var progressbar = document.getElementById("progressbar");
+			var percent = document.getElementById("percent");
+
+			var totalHeight = document.body.scrollHeight - window.innerHeight;
+			window.onscroll = function () {
+				var progress = (window.pageYOffset / totalHeight) * 100;
+				progressbar.style.height = progress + "%";
+				percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%"
+			}
+
+		</script>
+	</body>
+
+</html>

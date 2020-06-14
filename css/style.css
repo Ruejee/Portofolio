@@ -136,7 +136,8 @@ section p{
 	transform: translateY(-50%) rotateX(180deg) rotateY(180deg);
 	right: 15px;
 	color: #fff;
-	font-size: 8px;
+	font-family: Aquatico,Helvetica;
+	font-style: 3.5em;
 	writing-mode: vertical-rl;
 	text-orientation: sideways;
 }

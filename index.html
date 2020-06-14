@@ -14,7 +14,6 @@
 		<div id="progressbar"></div>
 		<div id="scrollpath"></div>
 		<div id="percent"></div>
-		<div id="sidetext">Loading </div>
 		<section>
 			<h2>Welcome dear Guest</h2>
 			<br>
@@ -64,7 +63,7 @@
 			window.onscroll = function () {
 				var progress = (window.pageYOffset / totalHeight) * 100;
 				progressbar.style.height = progress + "%";
-				percent.innerHTML = document.getElementById("side-text") + Math.round(progress) + "%"
+				percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%"
 			}
 
 		</script>

@@ -5,5 +5,5 @@ var totalHeight = document.body.scrollHeight - window.innerHeight;
 window.onscroll = function () {
 	var progress = (window.pageYOffset / totalHeight) * 100;
 	progressbar.style.height = progress + "%";
-	percent.innerHTML = "Loading" + Math.round(progress) + "%"
+	percent.innerHTML = "Loading - " + Math.round(progress) + "%"
 }

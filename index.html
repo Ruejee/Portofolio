@@ -15,7 +15,7 @@
 		<div id="scrollpath"></div>
 		<div id="percent"></div>
 		<section>
-			<h2>Welcome dear Guest</h2>
+			<h2>Welcome, dear Guest</h2>
 			<br>
 			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 				Nam veniam aspernatur ut eveniet, ipsam nostrum tempore vitae,
@@ -55,18 +55,7 @@
 		<div class="signature">
 			<p>Donos <span>Cristian</span></p>
 		</div>
-		<script type="text/javascript">
-			var progressbar = document.getElementById("progressbar");
-			var percent = document.getElementById("percent");
-
-			var totalHeight = document.body.scrollHeight - window.innerHeight;
-			window.onscroll = function () {
-				var progress = (window.pageYOffset / totalHeight) * 100;
-				progressbar.style.height = progress + "%";
-				percent.innerHTML = "Loading" + Math.round(progress) + "%"
-			}
-
-		</script>
+		<script src="./js/main.js"></script>
 	</body>
 
 </html>
